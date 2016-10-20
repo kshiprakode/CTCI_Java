@@ -37,13 +37,8 @@ public class Array_Strings_2 {
 		}
 
 		// Compare the character counts
-		for(int i = 0; i < 128; i++)
-		{
-			if(charCount1[i] != charCount2[i])
-				return false;
-		}
-
-		return true;
+		return charCount1.equals(charCount2);
+	
 	}
 
 	// Sort and compare the strings (Time Complexity - O(n log(n)))
