@@ -1,6 +1,7 @@
 //	Determine if a string has all unique characters
 //	Assumptions, 'A' and 'a' are different
 //	Space and symbols are ignored
+// Strings can contain any number of symbols and spaces
 
 package ctci.kshiprakode;
 
@@ -34,12 +35,22 @@ public class Array_Strings_1 {
 	// Considers only lower case characters 'a' - 'z'
 	// We use an integer as a bit vector to keep a track of all
 	// the characters we have encountered. 
+	
+	// Example "ab"
+	// bitVector = 00000000000000000000000000000000
+	// Iteration 1:
+	// val = 0, 1 and bitVector = 0
+	// Updated bitVector = 00000000000000000000000000000001
+	// Iteration 2:
+	// val = 1, 10 and bitVector = 0
+	// Updated bitVector = 00000000000000000000000000000011
+	// Therefore returns false;
 	public static boolean isUniqueBitVector(String string)
 	{
 		int bitVector = 0;
 		for(int i = 0; i < string.length(); i++)
 		{
-			int val = string.charAt(i) - 'A';
+			int val = string.charAt(i) - 'a';
 			if((bitVector & (1 << val)) > 0)
 				return false;
 			else
