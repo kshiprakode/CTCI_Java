@@ -10,19 +10,23 @@ public class Array_Strings_6 {
 
 	public static String stringCompression(String string){
 		
-		String copyString = new String(string);
 		String newString = new String();
 		
-		int counter = 0;
-		for(int i = 0 , j = 1 ;i < string.length() && j < string.length();)
+		int counter = 1;
+		for(int i = 0 , j = 1 ;i < string.length();)
 		{
-			while(string.charAt(i) == string.charAt(j) && j < string.length())
+			if(i < string.length() && j <  string.length())
 			{
-				counter++;
-				j++;
+				while(string.charAt(i) == string.charAt(j) && j < string.length())
+				{
+					counter++;
+					j++;
+				}
 			}
-			newString += string.charAt(i) + counter;
+
+			newString += Character.toString(string.charAt(i)) + counter;
 			i = j;
+			counter = 0;
 			System.out.println(newString);
 		}
 		
@@ -33,7 +37,7 @@ public class Array_Strings_6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println(stringCompression("aaabbbaaacccdde"));
+		System.out.println(stringCompression("aaa"));
 
 	}
 
