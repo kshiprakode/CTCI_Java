@@ -2,15 +2,17 @@
 // If the compressed string does not have a length smaller than the 
 // given string, return the given string.
 // Since each character in the string needs to be visited atleast once
-// Time Complexity - O(n)
+// Time Complexity - O(n) (Using StringBuilder)
+// Time Complexity - O(n + concat^2) (Using String since, string concat takes O(n^2) time)
 
 package ctci.kshiprakode;
 
 public class Array_Strings_6 {
 
+	// String concatenation is an expensive overation and should be replaced by StringBuilder.
 	public static String stringCompression(String string){
 		
-		String newString = new String();
+		StringBuilder newString = new StringBuilder();
 		
 		int counter = 1;
 		for(int i = 0 , j = 1 ;i < string.length() && j < string.length();)
@@ -22,13 +24,13 @@ public class Array_Strings_6 {
 				if(j >= string.length())
 					break;
 			}
-			newString += Character.toString(string.charAt(i)) + counter;
+			newString.append(Character.toString(string.charAt(i)) + counter);
 			i = j;
 			counter = 0;
 		}
 
 		if(newString.length() < string.length())
-			return newString;
+			return newString.toString();
 
 		return string;
 	}
