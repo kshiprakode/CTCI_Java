@@ -24,11 +24,7 @@ public class Array_Strings_8 {
 			if(mat[0][i] == 0)
 				columnZero = true;
 		}
-		
-		if(rowZero && columnZero)
-		{
-			mat[0][0] = 0;
-		}
+				
 		
 		for(int i = 1; i < mat.length; i++)
 		{
@@ -38,26 +34,12 @@ public class Array_Strings_8 {
 				{
 					mat[i][0] = 0;
 					mat[0][j] = 0;
+					
 				}
 			}
 		}
 
-		for(int i = 1; i < mat.length; i++)
-		{
-			for(int j = 1; j < mat[0].length; j++)
-			{
-				if(mat[i][j] == 0)
-				{
-					mat[i][0] = 0;
-					mat[0][j] = 0;
-				}
-			}
-		}
-
-		for(int i = 0; i < mat.length; i++)
-			System.out.println(Arrays.toString(mat[i]));
-		
-		
+				
 		for(int i = 1; i < mat.length; i++)
 		{
 			if(mat[i][0] == 0)
@@ -79,20 +61,29 @@ public class Array_Strings_8 {
 				}
 			}
 		}
-		
 
-		if(mat[0][0] == 0)
+		if(rowZero)
 		{
-			for(int i = 0 ; i < mat.length;i++ )
+			for(int i = 1 ; i < mat.length;i++ )
 				mat[i][0] = 0;
-			for(int i = 0 ; i < mat[0].length;i++ )
+
+		}
+
+		if(columnZero)
+		{
+			for(int i = 1 ; i < mat[0].length;i++ )
 				mat[0][i] = 0;
 
 		}
+
+		if(rowZero || columnZero)
+			mat[0][0] = 0;
+		
+		System.out.println();
 		
 		for(int i = 0; i < mat.length; i++)
 			System.out.println(Arrays.toString(mat[i]));
-		
+		System.out.println();
 	}
 	
 	public static void zeroMatrixSpacen(int [][]mat)
@@ -134,6 +125,7 @@ public class Array_Strings_8 {
 				}
 		}
 		
+		
 		for(int i = 0; i < mat.length; i++)
 			System.out.println(Arrays.toString(mat[i]));
 
@@ -142,10 +134,11 @@ public class Array_Strings_8 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int mat[][] = {{0,1,2,3},{1,2,3,4},{2,3,4,0},{1,2,3,4}};
+		int mat[][] = {{1,1,0,3},{0,2,3,4},{2,3,4,1},{1,2,3,4}};
+		int mat1[][] = {{1,1,0,3},{0,2,3,4},{2,3,4,1},{1,2,3,4}};
 		
 		zeroMatrixSpacen(mat);
-		zeroMatrixSpace1(mat);
+		zeroMatrixSpace1(mat1);
 	}
 
 }
