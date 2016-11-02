@@ -23,6 +23,8 @@ public class Array_Strings_5 {
 			return calculateAddDelete(str2, str1);
 	}
 
+	
+	// CalculateReplace and calculateAddDelete can be replaced together since the code is similar
 	private static int calculateReplace(String str1,String str2)
 	{
 		int counter = 0;
