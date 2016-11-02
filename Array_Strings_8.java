@@ -1,4 +1,6 @@
-// Given a matrix, 
+// Given a matrix, when anyelement in the matrix is zero, 
+// change all the elements
+// in the row and column of the matrix to zero. 
 
 package ctci.kshiprakode;
 
@@ -7,6 +9,10 @@ import java.util.HashSet;
 
 public class Array_Strings_8 {
 
+	
+	// Use the first row and first column to check if the row or column contains a zero
+	// Complexity - Time : O(n^2)
+	// Space :  O(1)
 	public static void zeroMatrixSpace1(int [][]mat)
 	{
 		
@@ -86,6 +92,9 @@ public class Array_Strings_8 {
 		System.out.println();
 	}
 	
+	// Use a HashSet to check if the row or column contains a zero
+	// Complexity - Time : O(n^2)
+	// Space :  O(n + m), n - number of rows, m - number of columns
 	public static void zeroMatrixSpacen(int [][]mat)
 	{
 		
@@ -128,8 +137,6 @@ public class Array_Strings_8 {
 		
 		for(int i = 0; i < mat.length; i++)
 			System.out.println(Arrays.toString(mat[i]));
-
-		
 	}
 	
 	public static void main(String[] args) {
@@ -137,8 +144,36 @@ public class Array_Strings_8 {
 		int mat[][] = {{1,1,0,3},{0,2,3,4},{2,3,4,1},{1,2,3,4}};
 		int mat1[][] = {{1,1,0,3},{0,2,3,4},{2,3,4,1},{1,2,3,4}};
 		
+		System.out.println("Matrix 1 :: ");
+
+		System.out.println("Space n, Matrix 1 :: ");
 		zeroMatrixSpacen(mat);
+		
+		System.out.println("Space 1, Matrix 1 :: ");
 		zeroMatrixSpace1(mat1);
+
+		int [][]mat2 = {{1,1,1,3},{0,2,3,4},{2,3,4,1}};
+		int [][]mat21 = {{1,1,1,3},{0,2,3,4},{2,3,4,1}};
+		
+		System.out.println("Matrix 2 :: ");
+
+		System.out.println("Space n, Matrix 2 :: ");
+		zeroMatrixSpacen(mat2);
+		
+		System.out.println("Space 1, Matrix 2 :: ");
+		zeroMatrixSpace1(mat21);
+		
+		int [][]mat3 = {{1,1,1},{2,3,4},{3,0,1}};
+		int [][]mat31 = {{1,1,1},{2,3,4},{3,0,1}};
+		
+		System.out.println("Matrix 3 :: ");
+
+		System.out.println("Space n, Matrix 3 :: ");
+		zeroMatrixSpacen(mat3);
+		
+		System.out.println("Space 1, Matrix 3 :: ");
+		zeroMatrixSpace1(mat31);
+
 	}
 
 }
