@@ -3,7 +3,7 @@
 //	Space and symbols are ignored
 // Strings can contain any number of symbols and spaces
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 public class Array_Strings_1 {
 
