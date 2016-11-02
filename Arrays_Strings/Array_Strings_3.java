@@ -1,7 +1,7 @@
 // Replace all spaces in a string with '%20'
 // Assuming you are given additional spaces to hold the extra characters
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 
 public class Array_Strings_3 {

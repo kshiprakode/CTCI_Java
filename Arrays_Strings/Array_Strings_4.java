@@ -2,7 +2,7 @@
 // Maintain character count (Time Complexity - O(n), Space Complexity - O(n))
 // Sort and check (Time Complexity O(n log(n))
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 public class Array_Strings_4 {
 

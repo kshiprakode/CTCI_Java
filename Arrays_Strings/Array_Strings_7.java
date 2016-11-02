@@ -1,7 +1,7 @@
 //	Rotate Matrix
 
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 public class Array_Strings_7 {
 

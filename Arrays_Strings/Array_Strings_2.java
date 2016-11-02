@@ -2,7 +2,7 @@
 //	Are spaces and symbols considered or ignored?
 // 	Lower and Upper cases considered or not?
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 import java.util.Arrays;
 

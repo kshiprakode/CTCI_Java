@@ -5,7 +5,7 @@
 // Time Complexity - O(n) (Using StringBuilder)
 // Time Complexity - O(n + concat^2) (Using String since, string concat takes O(n^2) time)
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 public class Array_Strings_6 {
 

@@ -4,7 +4,7 @@
 // Replace
 // Time Complexity - O(n)
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 public class Array_Strings_5 {
 

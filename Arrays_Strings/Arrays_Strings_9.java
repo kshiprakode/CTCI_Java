@@ -1,7 +1,7 @@
 // Assume you are given a method isSubstring that checks if one string is the substring of another
 // Write a method to check if one string is a rotation of the other with only one call is isSubstring
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 public class Arrays_Strings_9 {
 

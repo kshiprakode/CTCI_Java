@@ -2,7 +2,7 @@
 // change all the elements
 // in the row and column of the matrix to zero. 
 
-package ctci.kshiprakode;
+package ctci.kshiprakode.Arrays_Strings;
 
 import java.util.Arrays;
 import java.util.HashSet;
