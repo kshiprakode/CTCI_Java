@@ -9,6 +9,8 @@ public class Arrays_Strings_9 {
 	public static boolean isRotation(String str1, String str2)
 	{
 
+		// concat the second string with itself
+		// can be replaced with an inexpensive operation
 		str2 = str2 + str2;
 		return str2.indexOf(str1) == -1 ? false : true;
 	
