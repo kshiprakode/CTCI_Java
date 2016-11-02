@@ -53,10 +53,10 @@ public class Array_Strings_5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//		Testcases:
-		//			1. Empty Strings
-		//			2. Strings one edit distance away.
-		//			3. Strings two edit distance away.
+		// Testcases:
+		//	1. Empty Strings
+		//	2. Strings one edit distance away.
+		//	3. Strings two edit distance away.
 		System.out.println("'' and '' \t\t: " + oneAway("",""));
 		System.out.println("'pale' and 'bale' \t: " + oneAway("pale","bale"));
 		System.out.println("'pale' and 'ple' \t: " + oneAway("pale","ple"));
