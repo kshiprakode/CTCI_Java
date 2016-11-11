@@ -5,7 +5,6 @@
 
 package ctci.kshiprakode.linkedList;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import ctci.kshiprakode.linkedList.LList.Node;
 
